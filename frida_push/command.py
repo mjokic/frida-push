@@ -2,7 +2,7 @@
 
 """ This script aims to automate the process of starting frida-server
 on an Android device (for now). The script is a part of AndroidTamer
-project and is based on this issue: 
+project and is based on this issue:
 https://github.com/AndroidTamer/Tools_Repository/issues/234.
 
 This script performs following things:
@@ -46,6 +46,7 @@ except ImportError:
 # Just put "adb" below, if adb exists in your system path.
 ADB_PATH = "adb"
 DOWNLOAD_PATH = path.expanduser("~/.frida-push")
+FRIDA_VERSION = '10.7.7'
 
 
 def list_devices():
